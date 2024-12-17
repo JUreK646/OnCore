@@ -1,0 +1,138 @@
+/* Podstawowy CSS dla interfejsu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #36393f;
+    color: #dcddde;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #2f3136;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #5e6bb4;
+}
+
+.auth-section, .chat-section {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.auth-section input,
+.chat-section input {
+    padding: 10px;
+    margin: 10px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#friendSection {
+    margin-bottom: 20px;
+}
+
+#friendSearch {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+}
+
+#friendsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#friendsList li {
+    background-color: #40444b;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#friendsList li:hover {
+    background-color: #7289da;
+}
+
+#searchResult {
+    color: #f04747;
+    margin-top: 10px;
+}
+
+#searchResult.success {
+    color: #2ecc71;
+}
+
+#privateChatWindow {
+    margin-bottom: 10px;
+}
+
+.chat-input input {
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #40444b;
+    color: #dcddde;
+}
+
+.chat-input button {
+    background-color: #7289da;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+}
+
+.chat-input button:hover {
+    background-color: #5e6bb4;
+}
+
+#logoutBtn {
+    background-color: #ff4747;
+    font-size: 16px;
+}
+
+#logoutBtn:hover {
+    background-color: #e03e3e;
+}
